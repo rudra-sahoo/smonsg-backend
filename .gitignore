@@ -1,0 +1,56 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Output of build process
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Test coverage directory used by tools like istanbul
+coverage/
+
+# Transpiled output
+dist/
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Yarn integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache/
+.parcel-cache/
+
+# Next.js build output
+.next/
+out/
+
+# Nest.js build output
+/dist/
+
+# PM2 related files
+pm2.json

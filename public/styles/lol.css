@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffcccb; /* Light pink background */
+    color: #000; /* Black text */
+    user-select: none; /* Disable text selection */
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 90%;
+    max-height: 80%;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f06292; /* Pink button */
+    color: #fff;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    user-select: none; /* Disable text selection */
+}
+
+.gif-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    user-select: none; /* Disable text selection */
+}
+
+.gif-container img {
+    max-width: 100%;
+    max-height: 100%;
+}

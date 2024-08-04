@@ -1,0 +1,130 @@
+<mjml>
+  <mj-head>
+    <mj-style>
+      .header {
+        background-color: #4e2d6f;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
+        font-size: 28px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .header h1 {
+        font-size: 40px;
+        margin: 0;
+        animation: fadeIn 2s;
+      }
+      .header img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px auto;
+        display: block;
+        animation: fadeIn 2s;
+      }
+      .footer {
+        background-color: #4e2d6f;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 0 0 10px 10px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .card {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border: 1px solid #333333;
+        position: relative;
+        overflow: hidden;
+      }
+      .otp {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 20px 0;
+        user-select: none;
+        animation: pulse 1s infinite;
+      }
+      .card-container {
+        padding: 20px;
+        text-align: center;
+      }
+      .social-icons {
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+      }
+      .social-icons img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: opacity 0.3s ease;
+      }
+      .social-icons a:hover img {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f0f0f0">
+    <mj-section padding="0">
+      <mj-column width="100%">
+        <mj-text css-class="header">
+          <img src="https://itsrudra.xyz/uploads/assets/logo.png" alt="Company Logo">
+          <h1>Welcome Back, {{USER_NAME}}!</h1>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="20px 0">
+      <mj-column width="100%">
+        <mj-text css-class="card-container">
+          <mj-text css-class="card">
+            <div class="otp">Your OTP: {{OTP_CODE}}</div>
+            <div class="social-icons">
+              <p>Follow us on social media:</p>
+              <a href="https://github.com/rudra-sahoo" target="_blank">
+                <img src="https://itsrudra.xyz/uploads/assets/github.png" alt="Github">
+              </a>
+              <a href="https://x.com/Rudra7555" target="_blank">
+                <img src="https://itsrudra.xyz/uploads/assets/twitter.png" alt="X">
+              </a>
+              <a href="https://instagram.com/rudra.sah00" target="_blank">
+                <img src="https://itsrudra.xyz/uploads/assets/instagram.png" alt="Instagram">
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="https://itsrudra.xyz/uploads/assets/linkedin.png" alt="LinkedIn">
+              </a>
+            </div>
+          </mj-text>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column width="100%">
+        <mj-text css-class="footer">
+          Thank you for being with us.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
